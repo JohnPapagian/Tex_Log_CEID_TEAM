@@ -1,10 +1,7 @@
 
 package hotail;
 
-/**
- *
- * @author JP
- */
+
 public class Sensors {
     
     private float latitude; // private = restricted access

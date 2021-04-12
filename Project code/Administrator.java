@@ -6,10 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
-/**
- *
- * @author JP
- */
+
 public class Administrator extends User {
     
      private List<String> customers = new ArrayList<>();
