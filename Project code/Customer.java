@@ -5,25 +5,25 @@ package hotail;
 public class Customer extends User {
    
     
-      private int room_num;
+      private int order_num;
 
         
     Customer(String name,String pass,int num) {
        
         super(name,pass);
-        room_num=num;
+        order_num=num;
     } 
             
         
-        public int get_room_num() { //get customer list method
+        public int get_order_num() { //get customer list method
      
-        return room_num;
+        return order_num;
   }
   
 
-      public void set_room_num(int num) {  //add customer method
+      public void set_order_num(int num) {  //add customer method
      
-        this.room_num = num;
+        this.order_num = num;
         
   }
 

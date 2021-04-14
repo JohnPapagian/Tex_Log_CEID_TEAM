@@ -10,7 +10,7 @@ import java.util.*;
 public class Administrator extends User {
     
      private List<String> customers = new ArrayList<>();
-     private float latitude; // private = restricted access
+    
     
       Administrator(String name,String pass,int num) {
        
