@@ -12,9 +12,12 @@ public class Economic_Recources {
             
             
     {
-        int salary=Staff.get_salary();
-        int restaurant_income=Restaurant.get_monthly_income();
-        int supplie_costs=Supplies.get_monthly_costs();
+        int salary=Staff.get_salary(); //STAFF
+        
+        int restaurant_income=Restaurant.get_monthly_income(); //RESTAURANT
+        
+        int supplie_costs=Supplies.get_monthly_costs(); //COST OF SUPPLIES
+        
         
         
         int monthly_profits=salary+restaurant_income-supplie_costs;

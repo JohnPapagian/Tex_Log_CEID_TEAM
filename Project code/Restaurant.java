@@ -5,7 +5,7 @@ package hotail;
 public class Restaurant {
     
     private static int[] monthly_income = new int[30];
-    private int income;
+    private static int income;
         
         
     public static int get_monthly_income()
@@ -17,10 +17,10 @@ public class Restaurant {
                 return sum;
         
             }
-      public void add_income(int day,int inc)
+      public static void add_income(int day,int inc)
             {
-                this.income+=inc;
-                this.monthly_income[day]+=inc;
+               income+=inc;
+               monthly_income[day]+=inc;
   
                 
             }
