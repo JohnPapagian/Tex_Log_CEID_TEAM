@@ -1,0 +1,87 @@
+package hotail;
+
+public class HOTAIL {
+
+
+    public static void main(String[] args) {
+	 System.out.println("1.Hotel	2.Company\n");
+	 String user_input;
+	 Scanner scan1 = new Scanner(System.in);
+         user_input1 = scan1.nextLine();
+         if(user_input1==1){
+          System.out.println("1.Log in 	2.Sign up\n");
+          Scanner scan2 = new Scanner(System.in);
+          user_input2 = scan2.nextLine();
+          if(user_input2==1){
+           System.out.println("Enter your name:\n");
+           Scanner scan3 = new Scanner(System.in);
+           user_input3 = scan3.nextLine();
+           System.out.println("Enter your password:\n");
+           Scanner scan4 = new Scanner(System.in);
+           user_input3 = scan3.nextLine();
+           //if userobject.password==user_input klp
+           System.out.println("MENU\n1.Connection with companies\n2.Information Collection\n3.financial resource management\ν4.Staff\n5.Sensors\n6.Notepad\n");
+           Scanner scan6 = new Scanner(System.in);
+           user_input6 = scan6.nextLine();
+           if(user_input6==1){
+            System.out.println("1.Connected Companies\n2.Add Company\n");
+            Scanner scan7 = new Scanner(System.in);
+            user_input7 = scan7.nextLine();
+            if(user_input7==1){
+             System.out.println("*lista me tis etaireies*\n");  //den xerw an xreiazetai na valw requests apo database edw akoma
+             
+             
+             
+             
+            }else if(user_input7==2){
+            System.out.println("1.Share Password\n2.Enter e-mail\n"); //++
+            
+                       
+            }
+           }else if(user_input6==2){
+            System.out.println("1.Accommodation statistics\n2.Registered orders\n3.Search\n");
+            Scanner scan8 = new Scanner(System.in);
+            user_input8 = scan8.nextLine();
+            if(user_input8==3){
+             System.out.println("Enter customer's fullname and phone number ");
+             Scanner scan9 = new Scanner(System.in);
+             user_input9 = scan9.nextLine();
+             *************************database request**********
+             }
+           }
+          }else if(user_input2==2){
+           System.out.println("Enter your name:\n");
+           Scanner scan1 = new Scanner(System.in);
+           user_input5 = scan1.nextLine();
+           System.out.println("Enter your password:\n");
+           Scanner scan1 = new Scanner(System.in);
+           user_input5 = scan1.nextLine();
+           System.out.println("Confirm your password:\n");
+           Scanner scan1 = new Scanner(System.in);
+           user_input6 = scan1.nextLine();
+           System.out.println("Your register was successful\n\nMENU\n\n1.Connection with companies\n2.Information Collection\n3.financial resource management\ν4.Staff\n5.Sensors\n6.Notepad\n");
+           
+          }else if(user_input2==3){
+           
+          }
+         }
+	 
+         HOTAIL test=new HOTAIL();
+         Restaurant.add_income(5,290);
+         Restaurant.add_income(7,310);
+         int res_cost=Restaurant.get_monthly_income();
+         
+         Supplies.add_cost(5,340);
+         
+         
+         int res=Economic_Recources.get_montly_profits();
+         System.out.println("The restaurant made : " + res_cost +" euros ");
+         System.out.println("Profits for this month are : " + res +" euros ");
+        
+         
+          Employee temp=new Employee("NAME","PASSWORD","GUEST SERVICE AGENT");
+          int k=temp.add_reservation(5000);
+          System.out.println("Made reservation with code : " + k);
+    }
+    
+}
