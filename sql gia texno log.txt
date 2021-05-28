@@ -1,0 +1,85 @@
+CREATE DATABASE HOTAIL;
+
+
+CREATE TABLE "RECOURCES" (
+    "MONTHLY_INCOME" INTEGER(20) ,
+);
+
+
+
+CREATE TABLE "USERS" (
+    "NAME" VARCHAR(30) not null primary key,
+    "PASSWORD" VARCHAR(30),
+    "IS_EMPLOYEE" BOOLEAN
+
+);
+
+
+
+CREATE TABLE "SENSORS" (
+    "ID" INT(30) not null primary key,
+    "LATITUDE" FLOAT(10,8),
+    "LONGITUDE" FLOAT(10,8),
+    "LOCATION_NAME" STRING(20)
+
+);
+
+CREATE TABLE "NOTES" (
+    "NOTE_ID" INT(30) not null primary key,
+    "NOTE" VARCHAR(40)
+);
+
+
+
+CREATE TABLE "ORDERS" (
+    "ID" INT(30) not null primary key,
+    "FNAME" VARCHAR(20),
+    "LNAME" VARCHAR(20),
+    "PHONE" INT(10),
+    "AMOUNT" INT(10)    
+    "ORDER_DESCRIPTION" VARCHAR(30),
+    "STATUS" VARCHAR(20)
+);
+
+
+
+CREATE TABLE "RESERVATION" (
+    "ID" INT(30) not null primary key,
+    "FNAME" STRING(20),
+    "LNAME" STRING(20),
+    "PHONE" INT(10),
+    "DURATION_DAYS" INT(3),
+    "COST" INT(6),
+    "NUM_OF_GUESTS" INT(2)
+);
+
+CREATE TABLE "SUPPLIES" (
+    "PRODUCT" INT(30) not null primary key,
+    "AMOUNT" INT(5)
+);
+
+CREATE TABLE "COMPANIES" (
+    "NAME" VARCHAR(30) not null primary key,
+    "PASSWORD" VARCHAR(30),
+
+);
+
+CREATE TABLE "RESERVATION" (
+    "ID" INT(30) not null primary key,
+    "FNAME" STRING(20),
+    "LNAME" STRING(20),
+    "PHONE" INT(10),
+    "DURATION_DAYS" INT(3),
+    "COST" INT(6),
+    "NUM_OF_GUESTS" INT(2)
+);
+
+CREATE TABLE "REMINDER" (
+    "ID" INT(30) not null primary key,
+    "REMINDER" VARCHAR(40),
+    "TIME" TIME
+);
+
+
+INSERT INTO USERS  
+	VALUES ('name1','pass1',TRUE)
