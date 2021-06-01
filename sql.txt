@@ -1,0 +1,23 @@
+CREATE TABLE `users` (
+ `name` varchar(30) NOT NULL,
+ `password` varchar(30) NOT NULL,
+ `job` enum('hotelier','employee') NOT NULL,
+ PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `companies` (
+ `email` varchar(30) NOT NULL,
+ `code` varchar(10) NOT NULL,
+ `name` varchar(30) DEFAULT NULL,
+ PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `stocks` (
+ `company` varchar(30) NOT NULL,
+ `product` varchar(30) NOT NULL,
+ `stocks` int(6) DEFAULT NULL,
+ PRIMARY KEY (`product`),
+ CONSTRAINT `companyname` FOREIGN KEY (`company`) REFERENCES `companies` (`email`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
